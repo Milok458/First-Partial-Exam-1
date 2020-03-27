@@ -1,7 +1,116 @@
-
-
 div{
     border: 1px solid black;
     padding: 5px;
+    text-align: center;
 }
 
+.heading{
+    visibility: hidden;
+    border: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+}
+
+.content{
+    visibility: hidden;
+    border: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nav-box{
+    width: 49%;
+}
+
+@media only screen and (min-width: 600px){
+    .nav-box{
+        width: 24%;
+    }
+
+    .content{
+        visibility: visible;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    .side{
+        width: 24%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main{
+        width: 74%;
+    }
+
+    .main-box{
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 990px){
+    .nav-box{
+        width: 11.5%;
+    }
+
+    .content{
+        visibility: visible;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    .heading{
+        visibility: visible;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    .heading-box{
+        width: 20%;
+    }
+
+    .side{
+        width: 24%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side-box{
+        height: 32%;
+    }
+
+    .special-side-box{
+        height: 32%;
+    }
+
+    .main{
+        width: 74%;
+    }
+
+    .main-box{
+        text-align: left;
+    }
+}
